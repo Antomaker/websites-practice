@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Query About Opinion</title>
+    <link rel="stylesheet" href="stylesSurvey Form.css" />
+</head>
+
+<body>
+    <h1 id="title">Query About Opinion</h1>
+    <p id="description">This form is for know what things people likes</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Enter Your Name:<input type="text" id="name" name="name" required
+                    placeholder="Introduce your name" /></label>
+
+            <label id="email-label">Enter Your Email:
+                <input type="email" id="email" name="email" required placeholder="Introduce your email" /></label>
+
+            <label id="number-label">what is your age(years):
+                <input type="number" id="number" name="age" min="14" max="50" required
+                    placeholder="Introduce your age" /></label>
+        </fieldset>
+        <fieldset>
+            <select id="dropdown">
+                <option>white chocolate</option>
+                <option>black chocolate</option>
+                <option>pure black chocolate</option>
+            </select>
+            <label><input type="radio" value="1" name="like-type" class="pref"/>sweet</label>
+            <label><input type="radio" value="0" name="like-type" class="pref" />bitter</label>
+        </fieldset>
+        <fieldset>
+            <h2>candys preference</h2>
+            <label><input type="checkbox" name="pref" required value="1" class="pref"/>chocolate</label>
+            <label><input type="checkbox" name="pref" required value="2" class="pref"/>gumbel</label>
+            <label><input type="checkbox" name="pref" required value="3" class="pref"/>soda</label>
+            <label><input type="checkbox" name="pref" required value="4" class="pref"/>licorice candy</label>
+        </fieldset>
+        <fieldset>
+            <label>Provide a exp:
+                <textarea name="exp" rows="2" cols="20" placeholder="I like buy this candy..."></textarea>
+            </label>
+        </fieldset>
+            
+        
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
